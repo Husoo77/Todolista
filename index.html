@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo Lista</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Att-göra-lista</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div id="todoApp">
-    <form id="todoForm">
-        <input type="text" id="todoInput" placeholder="Lägg till en uppgift" required>
-        <button type="submit">ADD</button>
-    </form>
-    <ul id="todoList"></ul>
-</div>
-
-<script src="app.js"></script>
+    <div class="todo-container">
+        <form id="todo-form">
+            <input type="text" id="task-input" placeholder="Lägg till en uppgift..." required>
+            <button type="submit">Lägg till</button>
+        </form>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
