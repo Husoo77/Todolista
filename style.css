@@ -1,0 +1,99 @@
+/* Grundstil för hela sidan */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Stil för todo-appen */
+#todoApp {
+    background-color: #f8ecc2; /* Ljusgul bakgrund */
+    padding: 20px;
+    width: 320px;
+    border-radius: 10px;
+    border: 2px solid #d0a840; /* Guldbrun kant */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Lätt skugga */
+    font-size: 16px;
+    color: #333;
+}
+
+/* Stil för input och knapp */
+#todoForm {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#todoInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #d0a840; /* Guldbrun kant */
+    border-radius: 5px 0 0 5px;
+    background-color: #fdf7e4; /* Ljus bakgrund för input */
+    font-size: 16px;
+}
+
+#todoForm button {
+    background-color: #d0a840; /* Guldbrun knapp */
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#todoForm button:hover {
+    background-color: #b89035; /* Mörkare guld vid hover */
+}
+
+/* Stil för todo-listan */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #d0a840; /* Guldbrun linje mellan todos */
+    font-size: 16px;
+    color: #333;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #a5a5a5; /* Färg för klarmarkerade todos */
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* Stil för ta bort-knappen */
+button.deleteBtn {
+    background-color: #d86c6c; /* Röd för att ta bort */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button.deleteBtn:hover {
+    background-color: #c05555; /* Mörkare röd vid hover */
+}
+
+/* Bakgrundsfärg för hela listan */
+#todoList {
+    background-color: #faf3dc; /* Bakgrund för listan */
+    padding: 10px;
+    border-radius: 5px;
+}
